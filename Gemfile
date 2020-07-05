@@ -30,6 +30,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'solidus'
 gem 'solidus_auth_devise'
+gem 'solidus_static_content' # About page and such
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

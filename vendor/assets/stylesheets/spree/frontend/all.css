@@ -6,4 +6,37 @@
  *= require spree/frontend
  *= require_self
  *= require_tree .
+ *= require spree/frontend/solidus_static_content
 */
+
+.site-title {
+    text-align: center;
+}
+
+html,
+body {
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+
+a.galleryInfo {
+    height: 35px;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #bbbbbb;
+    border-bottom: none;
+    overflow: hidden;
+}
+
+/* .footer {
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+} */
+
+.taxons-list {
+    display: inline-flex;
+    list-style: none;
+}
