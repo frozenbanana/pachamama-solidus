@@ -10,7 +10,10 @@
 */
 
 .site-title {
+    margin-top: 5%;
+    font-size: 50px;
     text-align: center;
+    color: white;
 }
 
 html,
