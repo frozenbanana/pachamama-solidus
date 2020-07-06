@@ -1,3 +1,13 @@
+GIT
+  remote: https://github.com/jtapia/solidus_contact_us.git
+  revision: 9162bd13a7bd596153ed37007e73adaf270a75df
+  specs:
+    solidus_contact_us (1.0.0)
+      deface (~> 1.0)
+      solidus_auth_devise (>= 2.2, < 3)
+      solidus_core (>= 2.2, < 3.0)
+      solidus_support
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -384,6 +394,7 @@ DEPENDENCIES
   selenium-webdriver
   solidus
   solidus_auth_devise
+  solidus_contact_us!
   solidus_static_content
   spring
   spring-watcher-listen (~> 2.0.0)

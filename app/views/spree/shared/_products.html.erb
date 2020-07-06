@@ -16,6 +16,15 @@
 </div>
 
 <% if products.any? %>
+  <div data-hook="product_taxons">
+    <ul id="similar_items_by_taxon" data-hook>
+      <% products.each do |product| %>
+        <% product.taxons.each do |taxon| %>
+          <li><%= link_to taxon.name, seo_url(taxon) %></li>
+        <% end %>
+      <% end %>
+    </ul>
+  </div>
   <ul id="products" class="inline product-listing" data-hook>
     <% products.each do |product| %>
       <% url = spree.product_path(product, taxon_id: @taxon.try(:id)) %>
