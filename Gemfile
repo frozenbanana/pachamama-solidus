@@ -31,7 +31,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'solidus'
 gem 'solidus_auth_devise'
 gem 'solidus_static_content' # About page and such
-gem 'solidus_contact_us', github: 'jtapia/solidus_contact_us'
+gem 'solidus_stripe', '~> 3.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
