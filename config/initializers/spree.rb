@@ -5,10 +5,12 @@ Spree.config do |config|
   # Core:
 
   # Default currency for new sites
-  config.currency = "USD"
+  config.currency = "SEK"
+  country = Spree::Country.find_by_name('Sweden')
+  config.default_country_id = country.id if country.present?
 
   # from address for transactional emails
-  config.mails_from = "store@example.com"
+  config.mails_from = "info@maijapapazi.art"
 
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
