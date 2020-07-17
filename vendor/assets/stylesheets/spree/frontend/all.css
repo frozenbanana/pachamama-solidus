@@ -44,3 +44,31 @@ a.galleryInfo {
     list-style: none;
     margin: 0 5px;
 }
+
+@media (max-width: 400px) {
+
+    .nav-item {
+        display: block;
+    }
+
+    #main-nav-bar {
+        display: block;
+    }
+
+    ul.inline li {
+        display: block;
+    }
+}
+@media (min-width: 400px) {
+.nav-item {
+    display: inline;
+}
+
+#main-nav-bar {
+    display: block;
+}
+
+ul.inline li {
+    display: inline;
+}
+}

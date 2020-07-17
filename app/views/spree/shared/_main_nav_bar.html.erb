@@ -1,15 +1,16 @@
-<nav class="columns sixteen">
-  <ul id="main-nav-bar" class="inline" data-hook>
-    <li id="home-link" data-hook><%= link_to t('spree.gallery'), spree.root_path %></li>
-    <li id="products-link" data-hook><%= link_to t('spree.shop'), spree.products_path %></li>
-    <li id="original-art-link" data-hook><%= link_to "Original Art for Sale", "/t/original-art" %></li>
-    <li id="contact-link" data-hook><%= link_to "Contact", "/contact" %></li>
-    <li id="link-to-cart" data-hook>
+<nav class="navbar columns sixteen">
+  <ul id="main-nav-bar" data-hook>
+    <li class="nav-item" id="home-link" data-hook><%= link_to t('spree.gallery'), spree.root_path %></li>
+    <li class="nav-item" id="products-link" data-hook><%= link_to t('spree.shop'), spree.products_path %></li>
+    <li class="nav-item" id="original-art-link" data-hook><%= link_to "Original Art for Sale", "/t/original-art" %></li>
+    <li class="nav-item" id="contact-link" data-hook><%= link_to "Contact", "/contact" %></li>
+    <li class="nav-item" id="link-to-cart" data-hook>
       <noscript>
         <%= link_to t('spree.cart'), spree.cart_path %>
       </noscript>
-      &nbsp;
+      
     </li>
+    <li class="nav-item"><br /></li>
   </ul>
   <script>Spree.fetch_cart('<%= j spree.cart_link_path %>')</script>
 </nav>
